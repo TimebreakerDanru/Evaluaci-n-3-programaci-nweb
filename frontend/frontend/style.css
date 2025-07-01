@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+}
+
+form {
+  margin: 1rem 0;
+}
+
+input, select, button {
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  display: none;
+  margin-top: 1rem;
+}

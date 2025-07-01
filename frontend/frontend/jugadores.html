@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jugadores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="jugadores.html">Jugadores</a>
+    <a href="equipos.html">Equipos</a>
+  </nav>
+
+  <h1>Gestión de Jugadores</h1>
+  <div id="error" class="error"></div>
+
+ <form id="jugadorForm">
+  <input type="hidden" id="jugadorId" />
+  <input type="text" id="nombre" placeholder="Nombre del jugador" required />
+  <input type="text" id="pais" placeholder="País" required />
+  <input type="date" id="nacimiento" placeholder="Fecha de nacimiento" required />
+  <select id="equipoId" required></select>
+  <button type="submit">Guardar</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>País</th>
+      <th>Nacimiento</th>
+      <th>Equipo</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody id="jugadoresTabla"></tbody>
+</table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Equipo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="jugadoresTabla"></tbody>
+  </table>
+
+  <script type="module" src="js/jugadores.js"></script>
+</body>
+</html>
